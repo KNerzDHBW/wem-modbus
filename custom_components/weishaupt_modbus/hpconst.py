@@ -1361,7 +1361,7 @@ MODBUS_HZ_ITEMS = [
     # This is somehow in relation to: address=41102, name="Anforderung Typ"
     ModbusItem( address=31106, name="Adr. 31106", mformat=FORMATS.UNKNOWN, mtype=TYPES.SENSOR, device=DEVICES.HZ, translation_key="adr31106"),
     ModbusItem( address=41101, name="HZ_Konfiguration", mformat=FORMATS.STATUS, mtype=TYPES.NUMBER_RO, device=DEVICES.HZ, resultlist=HZ_KONFIGURATION, translation_key="hz_konf"),
-    ModbusItem( address=41102, name="Anforderung Typ", mformat=FORMATS.STATUS, mtype=TYPES.NUMBER_RO, device=DEVICES.HZ, resultlist=HZ_ANFORDERUNG, translation_key="anf_typ"),
+    ModbusItem( address=41102, name="Anforderung Typ", mformat=FORMATS.STATUS, mtype=TYPES.SELECT, device=DEVICES.HZ, resultlist=HZ_ANFORDERUNG, translation_key="anf_typ"),
     ModbusItem( address=41103, name="Betriebsart", mformat=FORMATS.STATUS, mtype=TYPES.SELECT, device=DEVICES.HZ, resultlist=HZ_BETRIEBSART, translation_key="hz_operationmode"),
     ModbusItem( address=41104, name="Pause / Party", mformat=FORMATS.STATUS, mtype=TYPES.SELECT, device=DEVICES.HZ, resultlist=HZ_PARTY_PAUSE, params = PARAMS_PARTY, translation_key="party_pause"),
     ModbusItem( address=41105, name="Raumsolltemperatur Komfort", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER, device=DEVICES.HZ, params=PARAMS_ROOMTEMP_HIGH, translation_key="raum_soll_temp_komf"),

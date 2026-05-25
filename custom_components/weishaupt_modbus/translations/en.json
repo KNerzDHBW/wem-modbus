@@ -228,6 +228,51 @@
           "hz_operationmode_comfort": "Comfort"
         }
       },
+      "anf_typ": {
+        "name": "{prefix}Request type",
+        "state": {
+          "hz_anforderung_aus": "off",
+          "hz_anforderung_konstant": "constant",
+          "hz_anforderung_witterungsgefuehrt": "weather-guided",
+          "hz_anforderung_raumregelung": "Room control"
+        }
+      },
+      "anf_typ2": {
+        "name": "{prefix}Request type2",
+        "state": {
+          "hz_anforderung_aus": "off",
+          "hz_anforderung_konstant": "constant",
+          "hz_anforderung_witterungsgefuehrt": "weather-guided",
+          "hz_anforderung_raumregelung": "Room control"
+        }
+      },
+      "anf_typ3": {
+        "name": "{prefix}Request type3",
+        "state": {
+          "hz_anforderung_aus": "off",
+          "hz_anforderung_konstant": "constant",
+          "hz_anforderung_witterungsgefuehrt": "weather-guided",
+          "hz_anforderung_raumregelung": "Room control"
+        }
+      },
+      "anf_typ4": {
+        "name": "{prefix}Request type4",
+        "state": {
+          "hz_anforderung_aus": "off",
+          "hz_anforderung_konstant": "constant",
+          "hz_anforderung_witterungsgefuehrt": "weather-guided",
+          "hz_anforderung_raumregelung": "Room control"
+        }
+      },
+      "anf_typ5": {
+        "name": "{prefix}Request type5",
+        "state": {
+          "hz_anforderung_aus": "off",
+          "hz_anforderung_konstant": "constant",
+          "hz_anforderung_witterungsgefuehrt": "weather-guided",
+          "hz_anforderung_raumregelung": "Room control"
+        }
+      },
       "party_pause": {
         "name": "{prefix}Pause / Party",
         "state": {

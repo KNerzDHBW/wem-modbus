@@ -228,6 +228,51 @@
                     "hz_operationmode_comfort": "Komfort"
                 }
             },
+            "anf_typ": {
+                "name": "{prefix}Anforderung Typ",
+                "state": {
+                    "hz_anforderung_aus": "aus",
+                    "hz_anforderung_konstant": "konstant",
+                    "hz_anforderung_witterungsgefuehrt": "witterungsgeführt",
+                    "hz_anforderung_raumregelung": "Raumregelung"
+                }
+            },
+            "anf_typ2": {
+                "name": "{prefix}Anforderung Typ2",
+                "state": {
+                    "hz_anforderung_aus": "aus",
+                    "hz_anforderung_konstant": "konstant",
+                    "hz_anforderung_witterungsgefuehrt": "witterungsgeführt",
+                    "hz_anforderung_raumregelung": "Raumregelung"
+                }
+            },
+            "anf_typ3": {
+                "name": "{prefix}Anforderung Typ3",
+                "state": {
+                    "hz_anforderung_aus": "aus",
+                    "hz_anforderung_konstant": "konstant",
+                    "hz_anforderung_witterungsgefuehrt": "witterungsgeführt",
+                    "hz_anforderung_raumregelung": "Raumregelung"
+                }
+            },
+            "anf_typ4": {
+                "name": "{prefix}Anforderung Typ4",
+                "state": {
+                    "hz_anforderung_aus": "aus",
+                    "hz_anforderung_konstant": "konstant",
+                    "hz_anforderung_witterungsgefuehrt": "witterungsgeführt",
+                    "hz_anforderung_raumregelung": "Raumregelung"
+                }
+            },
+            "anf_typ5": {
+                "name": "{prefix}Anforderung Typ5",
+                "state": {
+                    "hz_anforderung_aus": "aus",
+                    "hz_anforderung_konstant": "konstant",
+                    "hz_anforderung_witterungsgefuehrt": "witterungsgeführt",
+                    "hz_anforderung_raumregelung": "Raumregelung"
+                }
+            },
             "party_pause": {
                 "name": "{prefix}Pause / Party",
                 "state": {

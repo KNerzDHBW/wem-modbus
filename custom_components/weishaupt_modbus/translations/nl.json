@@ -507,6 +507,51 @@
           "sys_operationmode_standby" : "Standby"
         }
       },
+      "anf_typ" : {
+        "name" : "{prefix}Aanvraagtype",
+        "state" : {
+          "hz_anforderung_aus" : "Uit",
+          "hz_anforderung_konstant" : "Constant",
+          "hz_anforderung_witterungsgefuehrt" : "Weersafhankelijk",
+          "hz_anforderung_raumregelung": "Ruimtegestuurd"
+        }
+      },
+      "anf_typ2" : {
+        "name" : "{prefix}Aanvraagtype2",
+        "state" : {
+          "hz_anforderung_aus" : "Uit",
+          "hz_anforderung_konstant" : "Constant",
+          "hz_anforderung_witterungsgefuehrt" : "Weersafhankelijk",
+          "hz_anforderung_raumregelung": "Ruimtegestuurd"
+        }
+      },
+      "anf_typ3" : {
+        "name" : "{prefix}Aanvraagtype3",
+        "state" : {
+          "hz_anforderung_aus" : "Uit",
+          "hz_anforderung_konstant" : "Constant",
+          "hz_anforderung_witterungsgefuehrt" : "Weersafhankelijk",
+          "hz_anforderung_raumregelung": "Ruimtegestuurd"
+        }
+      },
+      "anf_typ4" : {
+        "name" : "{prefix}Aanvraagtype4",
+        "state" : {
+          "hz_anforderung_aus" : "Uit",
+          "hz_anforderung_konstant" : "Constant",
+          "hz_anforderung_witterungsgefuehrt" : "Weersafhankelijk",
+          "hz_anforderung_raumregelung": "Ruimtegestuurd"
+        }
+      },
+      "anf_typ5" : {
+        "name" : "{prefix}Aanvraagtype5",
+        "state" : {
+          "hz_anforderung_aus" : "Uit",
+          "hz_anforderung_konstant" : "Constant",
+          "hz_anforderung_witterungsgefuehrt" : "Weersafhankelijk",
+          "hz_anforderung_raumregelung": "Ruimtegestuurd"
+        }
+      },
       "sys_pv": {
           "name": "{prefix}Instelpunt PV"
       },
