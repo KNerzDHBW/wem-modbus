@@ -158,6 +158,21 @@
       },
       "ww_normal" : {
         "name" : "{prefix}Warmwater Normaal"
+      },
+      "kuehl_konstanttemp" : {
+        "name" : "{prefix}Koelconstante temperatuur"
+      },
+      "kuehl_konstanttemp2" : {
+        "name" : "{prefix}Koelconstante temperatuur 2"
+      },
+      "kuehl_konstanttemp3" : {
+        "name" : "{prefix}Koelconstante temperatuur 3"
+      },
+      "kuehl_konstanttemp4" : {
+        "name" : "{prefix}Koelconstante temperatuur 4"
+      },
+      "kuehl_konstanttemp5" : {
+        "name" : "{prefix}Koelconstante temperatuur 5"
       }
     },
     "select" : {

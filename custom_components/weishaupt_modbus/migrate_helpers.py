@@ -55,6 +55,13 @@ def create_unique_id(config_entry: MyConfigEntry, modbus_item: ModbusItem) -> st
     return f"{config_entry.data[CONF.PREFIX]}{modbus_item.name}{dev_postfix}"
 
 
+def create_number_unique_id(
+    config_entry: MyConfigEntry, modbus_item: ModbusItem
+) -> str:
+    """Create a unique ID for writable number entities."""
+    return f"{create_unique_id(config_entry, modbus_item)}_number"
+
+
 @callback
 def migrate_entities(
     config_entry: MyConfigEntry,
@@ -81,20 +88,27 @@ def migrate_entities(
                 platform = "number"
 
         old_uid = create_unique_id(config_entry, item)
+        new_uid = create_number_unique_id(config_entry, item) if platform == "number" else old_uid
         new_entity_id = create_new_entity_id(config_entry, item, platform, device)
         old_entity_id = entity_registry.async_get_entity_id(
-            platform, CONST.DOMAIN, old_uid
+            platform, CONST.DOMAIN, new_uid
         )
+
+        if old_entity_id is None:
+            old_entity_id = entity_registry.async_get_entity_id(
+                platform, CONST.DOMAIN, old_uid
+            )
 
         if new_entity_id == old_entity_id:
             _LOGGER.info("Already migrated %s", old_entity_id)
-            return
+            continue
 
         if old_entity_id is not None:
             try:
                 entity_registry.async_update_entity(
                     old_entity_id,
                     new_entity_id=new_entity_id,
+                    new_unique_id=new_uid,
                 )
 
                 _LOGGER.info(

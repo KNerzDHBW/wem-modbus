@@ -13,11 +13,11 @@ from homeassistant.helpers.entity import Entity
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .configentry import MyConfigEntry
-from .const import CONF, CONST, FORMATS
+from .const import CONF, CONST, FORMATS, TYPES
 from .coordinator import MyCoordinator, MyWebIfCoordinator
 from .hpconst import reverse_device_list
 from .items import ModbusItem, WebItem
-from .migrate_helpers import create_unique_id
+from .migrate_helpers import create_number_unique_id, create_unique_id
 from .modbusobject import ModbusAPI, ModbusObject
 
 if TYPE_CHECKING:
@@ -85,7 +85,14 @@ class MyEntity(Entity):
         self._dev_translation_placeholders = {"postfix": dev_postfix}
 
         if isinstance(self._api_item, ModbusItem):
-            self._attr_unique_id = create_unique_id(self._config_entry, self._api_item)
+            if self._api_item.type == TYPES.NUMBER:
+                self._attr_unique_id = create_number_unique_id(
+                    self._config_entry, self._api_item
+                )
+            else:
+                self._attr_unique_id = create_unique_id(
+                    self._config_entry, self._api_item
+                )
         else:
             # For WebItem, create a simple unique ID
             dev_postfix = "_" + self._config_entry.data[CONF.DEVICE_POSTFIX]

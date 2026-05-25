@@ -160,6 +160,21 @@
       },
       "ww_normal": {
         "name": "{prefix}Hot water normal"
+      },
+      "kuehl_konstanttemp": {
+        "name": "{prefix}Cooling constant temperature"
+      },
+      "kuehl_konstanttemp2": {
+        "name": "{prefix}Cooling constant temperature 2"
+      },
+      "kuehl_konstanttemp3": {
+        "name": "{prefix}Cooling constant temperature 3"
+      },
+      "kuehl_konstanttemp4": {
+        "name": "{prefix}Cooling constant temperature 4"
+      },
+      "kuehl_konstanttemp5": {
+        "name": "{prefix}Cooling constant temperature 5"
       }
     },
     "select": {

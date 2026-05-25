@@ -160,6 +160,21 @@
             },
             "ww_normal": {
                 "name": "{prefix}Warmwasser Normal"
+            },
+            "kuehl_konstanttemp": {
+                "name": "{prefix}Kühlen Konstanttemperatur"
+            },
+            "kuehl_konstanttemp2": {
+                "name": "{prefix}Kühlen Konstanttemperatur2"
+            },
+            "kuehl_konstanttemp3": {
+                "name": "{prefix}Kühlen Konstanttemperatur3"
+            },
+            "kuehl_konstanttemp4": {
+                "name": "{prefix}Kühlen Konstanttemperatur4"
+            },
+            "kuehl_konstanttemp5": {
+                "name": "{prefix}Kühlen Konstanttemperatur5"
             }
         },
         "select": {
@@ -1223,7 +1238,7 @@
                 "name": "{prefix}Luftansaugtemperatur"
             },
             "puffer_temp": {
-                "name": "{prefix}Puffertemperatur?"
+                "name": "{prefix}Puffertemperatur"
             },
             "pumpe_einschaltart": {
                 "name": "{prefix}Pumpe Einschaltart"
@@ -1346,7 +1361,7 @@
                 "name": "{prefix}Verdichtersauggastemp"
             },
             "vl_praeziese_summenvorlauf_b7": {
-                "name": "{prefix}Vorlauftemperatur präzise(Summenvorlauf(B7))"
+                "name": "{prefix}Summenvorlauftemperatur (B7)"
             },
             "vl_temp": {
                 "name": "{prefix}Vorlauftemperatur"

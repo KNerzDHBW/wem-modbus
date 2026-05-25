@@ -160,6 +160,21 @@
             },
             "ww_normal": {
                 "name": "{prefix}Warmwasser Normal"
+            },
+            "kuehl_konstanttemp": {
+                "name": "{prefix}Kühlen Konstanttemperatur"
+            },
+            "kuehl_konstanttemp2": {
+                "name": "{prefix}Kühlen Konstanttemperatur2"
+            },
+            "kuehl_konstanttemp3": {
+                "name": "{prefix}Kühlen Konstanttemperatur3"
+            },
+            "kuehl_konstanttemp4": {
+                "name": "{prefix}Kühlen Konstanttemperatur4"
+            },
+            "kuehl_konstanttemp5": {
+                "name": "{prefix}Kühlen Konstanttemperatur5"
             }
         },
         "select": {

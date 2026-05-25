@@ -1371,7 +1371,7 @@ MODBUS_HZ_ITEMS = [
     ModbusItem( address=41109, name="Sommer Winter Umschaltung", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER, device=DEVICES.HZ, params=PARAMS_SUMMER_WINTER_SWITCH_TEMP, translation_key="so_wi_umschalt"),
     ModbusItem( address=41110, name="Heizen Konstanttemperatur", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER_RO, device=DEVICES.HZ, params=PARAMS_ROOMTEMP, translation_key="heiz_konstanttemp"),
     ModbusItem( address=41111, name="Heizen Konstanttemp Absenk", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER_RO, device=DEVICES.HZ, params=PARAMS_ROOMTEMP, translation_key="heiz_konstanttemp_absenk"),
-    ModbusItem( address=41112, name="Kühlen Konstanttemperatur", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER_RO, device=DEVICES.HZ, params=PARAMS_ROOMTEMP, translation_key="kuehl_konstanttemp"),
+    ModbusItem( address=41112, name="Kühlen Konstanttemperatur", mformat=FORMATS.TEMPERATURE, mtype=TYPES.NUMBER, device=DEVICES.HZ, params=PARAMS_ROOMTEMP, translation_key="kuehl_konstanttemp"),
 ]
 
 # buils other Heizkreis Itemlists

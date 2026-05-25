@@ -50,6 +50,11 @@ async def check_available(
     if await check_configured(api_item, config_entry) is False:
         return False
 
+    # Writable/selectable points must stay available even if the current read
+    # is temporarily invalid. They need to be created so the user can write them.
+    if api_item.type in (TYPES.NUMBER, TYPES.SELECT):
+        return True
+
     modbus_api = config_entry.runtime_data.modbus_api
     mbo = ModbusObject(modbus_api, api_item, no_connect_warn=True)
     _ = await mbo.get_value()
